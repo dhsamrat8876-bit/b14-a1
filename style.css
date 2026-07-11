@@ -1,11 +1,12 @@
-*{
-    margin: 5px;
+ *{
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
    font-family: 'poppins', sans-serif;
    background-color: #fff;
+    padding-top:80px;
 }
 ul{
     list-style: none;
@@ -31,14 +32,15 @@ header{
     top: 0;
     left: 0;
     z-index: 999;
-    box-shadow: 0 2px 8px rgba(0, 0, o, .08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
 }
 .navbar{
     max-width: 1200px;
     margin: auto;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: 80px;
+    align-items: center;
 
 }
 .logo{
@@ -63,13 +65,92 @@ header{
     background: #2148d6;
 }
 
+/* hero section */
+ .hero-section{
+    min-height: 100vh;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.32), rgba(0,0,0,.45)),
+    url("assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ } 
+
+/* hero container */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+ .hero-container{
+    max-width:900px;
+    color:#fff;
+    text-align: center;
+}
+.hero-container h1{
+
+    font-size:72px;
+    line-height:1.2;
+    margin-bottom: 20px;
+    
+}
+.hero-container h1 span{
+
+    color:#4f7cff;
+    font-style:italic;
+}
+.hero-container p{
+
+    max-width:700px;
+    margin:25px auto 35px;
+
+    font-size:18px;
+    line-height:30px;
+
+}
+
+.hero-btn{
+
+    display:inline-block;
+
+    background:#1d4ed8;
+    color:#fff;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:.3s;
+
+}
+.hero-btn:hover{
+
+    background:#153ebd;
+}
+
+
 
 /* footer */
 
+
 .footer{
+    background: #0f172a;
+    color: #fff;
+    padding: 20px 80px;
     display: flex;
     justify-content: space-between;
-    background-color: #0f172a;
-    color: white;
-    padding: 70px 8% 20px;
+    align-items: center;
+}
+.footer ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
